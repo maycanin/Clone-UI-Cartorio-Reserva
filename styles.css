@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0px; 
+    padding: 0px;
+    font-family: roboto, calibri, times, arial;
+}
+a { 
+    text-decoration: none;
+}
+header {
+    height: 56px;
+    width: 100%;
+    top: 0px;
+    background-color: #FFFFFF;
+    position: fixed;
+    background-position: center;
+}
+#linksinternos a {
+ color: #077457;
+ font-weight: bold;
+ font-family: roboto, calibri, times, arial;
+}
+.cards { 
+        display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    padding: 100px 60px 0 60px;
+}
+.card {
+    box-shadow: 0 0 1em #777;
+    border-radius: 8px;
+    padding: 0 20px 0 20px;
+}
+.card a {
+    color: green;
+}
+.footer {
+    background-color: #077457;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.footer p { 
+    text-align: center;
+}
+
+.footer a {
+    color: #cdcdcd;
+    font-weight: 100;
+}
+.grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    padding: 60px 40px 60px 70px;
+}
+@media only screen and (max-width: 960px) {
+   .cards {
+      grid-template-columns: auto;
+    }
+    .grid {
+        grid-template-columns: auto;
+    
+    }
+  }
+
+.foto {
+    width: 100%;
+    height: auto;
+}
+
+.mapa {
+    width: 100%;
+}
