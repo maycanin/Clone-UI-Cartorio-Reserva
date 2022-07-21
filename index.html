@@ -1,123 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartório</title>
+    <title>7 IEQ</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
-
-  <body>
+<body>
     <header>
+      <button id="menuButton" style="background-color: transparent; border: none;" onclick="openMenu();"><span class="fa fa-bars fa-3x" style="color: white; margin-top: 6px; margin-left: 6px;"></span></button>
       <div>
         <nav id="linksinternos">
           <div
-            style="display: flex; flex-direction: row; justify-content: center;"
-          >
-            <p><a href="#home">Home</a></p>
-            <p style="margin-left: 40px;"><a href="#servicos">Serviços</a></p>
-            <p style="margin-left: 40px;"><a href="#contato">Contato</a></p>
+            style="display: flex; flex-direction: row; justify-content: center;">
+            <p><a href="#home">HOME</a></p>
+            <p style="margin-left: 40px;"><a href="#nosssahistoria">NOSSA HISTÓRIA</a></p>
+            <p style="margin-left: 40px;"><a href="#noquecremos">NO QUE CREMOS</a></p>
+            <p style="margin-left: 40px;"><a href="#doutrina">DOUTRINA QUADRANGULAR</a></p>
+            <p style="margin-left: 40px;"><a href="#missao">NOSSA MISSÃO</a></p>
+            <p style="margin-left: 40px;"><a href="#organizacao">ORGANIZAÇÃO</a></p>
+            <p style="margin-left: 40px;"><a href="#ondeestamos">CONTATO</a></p>
           </div>
         </nav>
       </div>
+    <div class="mobileNav" id="mobileNav">
+      <div style="width: 100%; padding-right: 10px;"><button id="closeMenu" onclick="closeMenu();">X</button></div>
+      <p><a href="#home" onclick="closeMenu();">HOME</a></p>
+      <p><a href="#nosssahistoria" onclick="closeMenu();">NOSSA HISTÓRIA</a></p>
+      <p><a href="#noquecremos" onclick="closeMenu();">NO QUE CREMOS</a></p>
+      <p><a href="#doutrina" onclick="closeMenu();">DOUTRINA QUADRANGULAR</a></p>
+      <p><a href="#missao" onclick="closeMenu();">NOSSA MISSÃO</a></p>
+      <p><a href="#organizacao" onclick="closeMenu();">ORGANIZAÇÃO</a></p>
+      <p><a href="#ondeestamos" onclick="closeMenu();">CONTATO</a></p>
+    </div>
     </header>
-
-    <section id="home">
-      <img class="foto"
-        style="margin-top: 60px;"
-        src="https://www.rireserva.com.br/_next/image?url=%2Fimage.jpeg&w=1920&q=75"
-        alt="Serviço de Registro de Imoveis de Reserva"
-      />
+    <section class="video" id="home">
+      <video id="video" autoplay muted loop>
+        <source src="./videotopo.mp4" type="video/mp4">
+      </video>
     </section>
-
-    <section class="cards" id="servicos">
-      <div class="card">
-        <h1>Pedido de Certidão</h1>
-        <p>Certidão de matrícula do imóvel, com validade jurídica.</p>
-        <p>
-          <a
-            href="https://registradores.onr.org.br/CertidaoDigital/frmPedidosCertidao.aspx?from=menu&digital=1"
-          >
-            Acessar
-          </a>
-        </p>
-      </div>
-
-      <div class="card">
-        <h1>Matrícula Online</h1>
-        <p>
-          A Matrícula Online é a visualização da imagem da matrícula do imóvel,
-          tal como existente no cartório
-        </p>
-        <p>
-          <a
-            href="https://registradores.onr.org.br/VisualizarMatricula/DefaultVM.aspx?from=menu"
-          >
-            Acessar
-          </a>
-        </p>
-      </div>
-
-      <div class="card">
-        <h1>Pesquisa de Bens</h1>
-        <p>
-          A Pesquisa de Bens é a busca por CPF/CNPJ para detectar bens imóveis e
-          outros direitos reais.
-        </p>
-        <p>
-          <a href="https://registradores.onr.org.br/CE/DefaultCE.aspx">
-            Acessar
-          </a>
-        </p>
-      </div>
-
-      <div class="card">
-        <h1>Transparência</h1>
-        <p>
-          Para maiores informações sobre esta Serventia, visite o Portal da
-          Transparência do Foro Extrajudicial
-        </p>
-        <p>
-          <a
-            href="https://extrajudicial.tjpr.jus.br/informacoes-das-unidades-extrajudiciais/-/prestacaocontasunidade/unidade/1789"
-          >
-            Acessar
-          </a>
-        </p>
+    <section class="screen" id="nosssahistoria">
+      <div class="background-screen1">
+        <div class="text"><h1>NOSSA HISTÓRIA</h1>
+          <p>Fundada em 1° de janeiro de 1923, com a inauguração de sua sede internacional Angelus Temple, em Los Angeles, Califórnia; a Igreja do Evangelho Quadrangular nasceu no coração de Deus e foi confiada às mãos da evangelista Aimée Semple McPherson, conhecida como "Irmã Aimee" que, em seu ministério, foi responsável por diversas ações que resultaram em grandes impactos evangelísticos.</p>
+          <div><a href="pages/historia.html"> <button class="cta">
+            <span>Saiba mais</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button></a></div>
+        </div>
       </div>
     </section>
-    <section class="grid" id="contato">
-      <div>
-        <h1>Contato</h1>
-        <p>(42) 3276-1319 | (42) 3276-2885</p>
-        <p>(42) 9 9982-4987</p>
-        <p>reg.imobiliario@onda.com.br</p>
-        <p>Avenida Coronel Rogério Borba, 286 - Centro, Reserva - PR</p>
-      </div>
-      <div>
-        <h1>Endereço</h1>
-        <iframe class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7252.557602278371!2d-50.84453700000001!3d-24.64853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff60cdafb486444a!2sCart%C3%B3rio%20de%20Registro%20Geral%20de%20Im%C3%B3veis!5e0!3m2!1spt-BR!2sbr!4v1656544520582!5m2!1spt-BR!2sbr"
-          height="450"
-          style="border: 0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+    <section class="grid" id="noquecremos">
+      <div class="background-grid"><div class="text">
+        <h1>NO QUE CREMOS</h1>
+        <p>Cremos que a Bíblia Sagrada é a Palavra de Deus verdadeira, imutável, firme, inabalável, como Seu Autor, escrita por santos homens do passado, conforme eram movidos pelo Espírito Santo e por Ele inspirados (2 Timóteo, 3:16,17).</p>
+        <p>Cremos que só há Deus vivo e verdadeiro; Autor do céu e da terra e tudo o que neles há, o Alfa e o Ômega que sempre foi, é, e será pelos tempos sem fim. Um Deus que é trino: Pai, Filho e Espírito Santo; os três são coexistentes, eternos e iguais na perfeição divina (1 João, 5:7).</p><br><br>
+        <a href="pages/no_que_cremos.html"> <button class="cta">
+          <span>Saiba mais</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button></a>
+      </div></div>
+    </section>
+    <section class="grid" id="doutrina">
+      <div class="background-grid2"><div class="text2">
+        <p>As quatro doutrinas centrais da Igreja são: Doutrina da salvação, Doutrina do batismo com o Espírito Santo, Doutrina da cura divina, Doutrina da segunda vinda. Cremos que Jesus tem poder pra Salvar, Batiza com fogo por intermédio do Espírito Santo, Curar e que em breve Voltará.</p>
+        <p>Baseada inteiramente na Bíblia, mais especificamente na passagem através da visão de Ezequiel (Ezequiel1). Somos uma das igrejas pentecostais pioneiras do avivamento carismático do início do século XX.</p><br><br>
+        <a href="pages/doutrina.html"> <button class="cta">
+          <span>Saiba mais</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button></a>
+      </div></div>
+    </section>
+    <section class="grid" id="missao">
+      <div class="text">
+        <h1>NOSSA MISSÃO</h1>
+        <p>A Igreja do Evangelho Quadrangular existe para glorificar a o nome de Deus e promover o crescimento do Seu reino na terra. O mandamento de Jesus Cristo é levar o evangelho e fazer discípulos em todas as nações (Marcos, 16:15; Mateus, 28:19). Por isso, a Igreja Quadrangular se dedica à causa do evangelismo interdenominacional e mundial, o que expressa o seu espírito e foco.</p><br><br>
+        <a href="pages/missao.html"> <button class="cta">
+          <span>Saiba mais</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>  </a>   
       </div>
     </section>
-
+  </section>
+  <section class="grid" id="organizacao">
+    <div class="background-grid4"><div class="text">
+      <h1>ORGANIZAÇÃO QUADRANGULAR</h1>
+      <p>A organização administrativa da Igreja do Evangelho Quadrangular no Brasil da-se pela seguinte forma: O Conselho Nacional de Diretores da Igreja do Evangelho Quadrangular é o órgão responsável pela administração, decisões e determinações da denominação no Brasil. Na administração da Igreja, é auxiliado pelas Secretarias e Coordenadorias Nacionais, pelos Conselhos Estaduais, Superintendentes e Diretores de Campo.</p><br><br>
+      <a href="pages/organizacao.html"> <button class="cta">
+        <span>Saiba mais</span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button></a>
+    </div></div>
+  </section>
+  <section class="grid" id="ondeestamos">
+    <div class="text">
+     <h1>ONDE ESTAMOS / CONTATO</h1> 
+    </div>
+      <h2>Rua Regina Fabris Trivelato, 200 - Jd Paulista - Campo Mourão/PR</h2>
+      <a href="pages/contato.html"> <button class="cta">
+        <span>Fale Conosco</span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button></a>
+      <iframe class="mapa"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7288.487907780313!2d-52.3570268730469!3d-24.02246099571734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60f72f5bc182289d!2s7%C2%AA%20Igreja%20do%20Evangelho%20Quadrangular!5e0!3m2!1spt-BR!2sbr!4v1656605099477!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
     <footer>
       <div class="footer">
-        <p>© 2022 Serviço de Registro de Imóveis de Reserva - PR.<br>
-            Todos os direitos reservados.</p>
-        <p>
-          <a href="https://blitech.com.br/">
-            Desenvolvido por Blitech Soluções em TI
-          </a>
-        </p>
-      </div>
-    </footer>
-  </body>
-</html>
+        <p>© 2022 Sétima Igreja do Evangelho Quadrangular de Campo Mourão - PR.<br>
+          Todos os direitos reservados.</p>
+          <p>
+            <a href="mailto:maysoninacio@gmail.com">
+              Desenvolvido por Horizon Tecnologia da Informação
+            </a>
+          </p>
+        </div>
+      </footer>
+      
+      <script src="scripts_site.js"></script>
+    </body>
+    </html>
